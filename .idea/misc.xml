@@ -16,12 +16,15 @@
         <entry key="app/src/main/res/drawable/ic_people_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_settings_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2203125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_sign_in_user_infos.xml" value="0.2171875" />
         <entry key="app/src/main/res/layout/activity_sign_up_form.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_sign_up_infos.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/bottom_nav_menu.xml" value="0.234375" />
-        <entry key="app/src/main/res/layout/fragment_bmi_calculator.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_bmi_calculator.xml" value="0.16010804166671452" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/settings_fragment.xml" value="0.215625" />
+        <entry key="app/src/main/res/layout/workouts_fragments.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.234375" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1328125" />
       </map>
