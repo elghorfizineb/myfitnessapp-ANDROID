@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "288849005390",
+    "firebase_url": "https://quickfitdb-23286-default-rtdb.firebaseio.com",
+    "project_id": "quickfitdb-23286",
+    "storage_bucket": "quickfitdb-23286.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288849005390:android:4ed8ffaf06494d1c966c1f",
+        "android_client_info": {
+          "package_name": "com.example.myfitnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288849005390-sioio519rh5ibega47as6487l4o2in5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkUCJ_RZzGaLrbEaB7PPD7Wf1Ni6Ywfuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288849005390-sioio519rh5ibega47as6487l4o2in5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
