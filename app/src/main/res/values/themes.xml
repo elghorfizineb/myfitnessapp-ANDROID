@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/chateaurose</item>
         <item name="colorPrimaryVariant">@color/bossypink</item>
         <item name="colorOnPrimary">@color/rosequartz</item>
+
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/chateaurose</item>
         <item name="colorSecondaryVariant">@color/bossypink</item>
@@ -13,4 +14,5 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
 </resources>

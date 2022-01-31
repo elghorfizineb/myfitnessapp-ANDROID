@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,10 +36,15 @@ public class sign_up_form extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
     DatabaseReference myRef = firebaseDatabase.getReference().child("Users");
 
+
     //Now we are going to create the actual Firebase auth
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    String Shared_Pref_Name = "CurrentUser";
+    String Session_key = "Session_user";
 
 
 
@@ -90,6 +96,9 @@ public class sign_up_form extends AppCompatActivity {
         //User u = new User(fullname,username,email,password);
 
 
+
+
+
         if(!email.matches(emailPattern)){
             inputemail.setError("Enter a correct email");
         }
@@ -116,7 +125,7 @@ public class sign_up_form extends AppCompatActivity {
                         FirebaseUser firebaseUser=mAuth.getCurrentUser();
                         //Enter User data into the real time Database
                         User u = new User(fullname,username,email,password);
-                        myRef.push().setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        myRef.child(firebaseUser.getUid()).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if(task.isSuccessful()){

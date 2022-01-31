@@ -2,7 +2,9 @@ package com.example.myfitnessapp;
 
 import android.widget.EditText;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     String fullname, username, email,password, gender;
     double age, weight, height;
 
@@ -11,6 +13,14 @@ public class User {
         this.username = username;
         this.email = email;
         this.password = password;
+    }
+
+    public User(String fullname, String username, double age, double weight, double height) {
+        this.fullname = fullname;
+        this.username = username;
+        this.age = age;
+        this.weight = weight;
+        this.height = height;
     }
 
     public User(String fullname, String username, String email, String password, String gender, double age, double weight, double height) {
@@ -30,6 +40,8 @@ public class User {
         this.weight = weight;
         this.height = height;
     }
+
+
     public User(){
 
     }

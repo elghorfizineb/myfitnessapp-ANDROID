@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myfitnessapp">
         <activity
+            android:name=".bmiactivity"
+            android:exported="true" />
+        <activity
+            android:name=".bmi_calculator_activity"
+            android:exported="true" />
+        <activity
+            android:name=".updateProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".sign_up_form"
             android:exported="true" />
         <activity

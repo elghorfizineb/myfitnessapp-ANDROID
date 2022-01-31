@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -80,7 +81,6 @@ public class login_layout extends AppCompatActivity {
    private void PerfomLogin() {
         String email = emailinput.getText().toString();
         String password = passwordinput.getText().toString();
-
         if(!email.matches(emailPattern)){
             emailinput.setError("Enter a correct email");
         }
@@ -115,7 +115,6 @@ public class login_layout extends AppCompatActivity {
     private void sendUserToNextActivity() {
 
         Intent i = new Intent(login_layout.this,MainActivity.class);
-        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
 }
