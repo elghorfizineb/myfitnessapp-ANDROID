@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".programDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/programm"
+            android:text="PROGRAM OF THE DAY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/bossypink"
+            android:textStyle="bold"
+            android:background="@drawable/malefemalenotfocus"
+
+            />
+
+        <TextView
+            android:id="@+id/workout"
+            android:text="WORKOUT :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/bossypink"
+            android:textStyle="bold"
+            android:background="@drawable/malefemalenotfocus"
+            />
+
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/Diets"
+            android:text="DIET :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/bossypink"
+            android:textStyle="bold"
+            android:background="@drawable/malefemalenotfocus"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/meal1"
+                android:background="@drawable/plusminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Meal 1 :"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/food1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meal1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/food2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 2 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meal2"
+                android:background="@drawable/plusminus"
+                android:layout_below="@id/food3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Meal 2 :"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/food4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meal2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 2 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food5"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/meal3"
+                android:background="@drawable/plusminus"
+                android:layout_below="@id/food6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Meal 3:"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/food7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meal3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food7"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/food9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food8"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/malefemalenotfocus"
+                android:drawableLeft="@drawable/ic_result"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:text="Food 1 :"
+                android:textColor="@color/bossypink"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

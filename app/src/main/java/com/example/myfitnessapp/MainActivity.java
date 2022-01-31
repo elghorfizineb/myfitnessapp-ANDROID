@@ -12,17 +12,24 @@ import androidx.fragment.app.Fragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.midi.MidiDeviceService;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     MaterialToolbar toolbar;
@@ -36,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //This line hide
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -73,15 +81,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i);
                 break;
             case R.id.diets:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new dietsFragments()).commit();
+                Intent i2 = new Intent(MainActivity.this,countDownTimer.class);
+                startActivity(i2);
                 break;
 
             case R.id.programm:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new workouts_fragments()).commit();
+
+                Intent i3 = new Intent(MainActivity.this,program_activity.class);
+                startActivity(i3);
                 break;
+
             case R.id.setting:
-                Intent i2 = new Intent(MainActivity.this,updateProfileActivity.class);
-                startActivity(i2);
+                Intent i4 = new Intent(MainActivity.this,updateProfileActivity.class);
+                startActivity(i4);
                 break;
 
             case R.id.logout:

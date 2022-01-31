@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".program_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/centerhorizontalline"/>
+
+
+        <RelativeLayout
+            android:id="@+id/centerverticalline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/day1layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day1"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 1"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day2layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day2"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 2"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day3layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day1layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day3"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 3"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day4layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day2layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day4"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_rest"
+
+                />
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 4"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day5layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day3layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day5"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 5"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/day6layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day4layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day6"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 6"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day7layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day5layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day7"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 7"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day8layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day6layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day8"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_rest"
+
+                />
+
+            <TextView
+                android:id="@+id/day8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 8"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/day9layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day7layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day9"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 9"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/day10layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day8layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day10"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 10"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day11layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day9layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day11"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 11"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day12layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day9layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day12"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_rest"
+
+                />
+
+            <TextView
+                android:id="@+id/day12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 12"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day13layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/day11layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day13"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+
+                android:src="@drawable/ic_fitness" />
+
+            <TextView
+                android:id="@+id/day13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 13"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day14layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day12layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day14"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+
+                android:src="@drawable/ic_fitness" />
+
+            <TextView
+                android:id="@+id/day14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 14"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day15layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day13layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day15"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 15"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day16layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day14layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day16"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_rest"
+
+                />
+
+            <TextView
+                android:id="@+id/day16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 16"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day17layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day15layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day17"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 17"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/day18layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day16layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day18"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 18"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day19layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@id/centerverticalline"
+            android:layout_below="@id/day17layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day19"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_fitness"
+
+                />
+
+            <TextView
+                android:id="@+id/day19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 19"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/day20layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toEndOf="@id/centerverticalline"
+            android:layout_below="@id/day18layout"
+            android:background="@drawable/malefemalenotfocus">
+
+
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@id/day20"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_rest"
+
+                />
+
+            <TextView
+                android:id="@+id/day20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="DAY 20"
+                android:textAlignment="center"
+                android:textColor="@color/bossypink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

@@ -3,6 +3,7 @@ package com.example.myfitnessapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -118,5 +119,15 @@ public class updateProfileActivity extends AppCompatActivity {
 
 
 
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i = new Intent(updateProfileActivity.this, MainActivity.class);
+        updateProfileActivity.this.finish();
+        startActivity(i);
     }
 }
