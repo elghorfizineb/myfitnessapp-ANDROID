@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(i3);
                 break;
 
+
+
             case R.id.setting:
                 Intent i4 = new Intent(MainActivity.this,updateProfileActivity.class);
                 startActivity(i4);

@@ -41,10 +41,7 @@ public class sign_up_form extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
-    String Shared_Pref_Name = "CurrentUser";
-    String Session_key = "Session_user";
+
 
 
 

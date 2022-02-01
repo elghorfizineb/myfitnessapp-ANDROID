@@ -29,6 +29,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16330645161290322" />
         <entry key="app/src/main/res/layout/activity_program.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_program_detail.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_program_detail2.xml" value="0.13043478260869565" />
         <entry key="app/src/main/res/layout/activity_sign_in_user_infos.xml" value="0.2171875" />
         <entry key="app/src/main/res/layout/activity_sign_up_form.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_sign_up_infos.xml" value="0.234375" />

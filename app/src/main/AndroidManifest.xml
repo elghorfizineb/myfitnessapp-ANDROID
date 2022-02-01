@@ -15,6 +15,9 @@
             android:name=".programDetailActivity"
             android:exported="true" />
         <activity
+            android:name=".programDetailActivity2"
+            android:exported="true" />
+        <activity
             android:name=".program_activity"
             android:exported="true" />
         <activity

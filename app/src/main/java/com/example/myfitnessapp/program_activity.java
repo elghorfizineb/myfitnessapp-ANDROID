@@ -13,6 +13,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 public class program_activity extends AppCompatActivity {
 
     RelativeLayout day1layout;
+    RelativeLayout day4layout;
 
 
     @Override
@@ -21,12 +22,23 @@ public class program_activity extends AppCompatActivity {
         setContentView(R.layout.activity_program);
 
         day1layout = findViewById(R.id.day1layout);
+        day4layout = findViewById(R.id.day4layout);
         day1layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 day1layout.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalefocus));
                 Intent i = new Intent(program_activity.this, programDetailActivity.class);
                 startActivity(i);
+            }
+        });
+
+        day4layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                day4layout.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalefocus));
+                Intent i = new Intent(program_activity.this, programDetailActivity2.class);
+                startActivity(i);
+
             }
         });
 
